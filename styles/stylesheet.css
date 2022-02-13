@@ -8,7 +8,7 @@
   font-size: 10px; }
 
 body {
-  background-color: #FEFEFE; }
+  background-color: #252525; }
 
 .nav {
   position: fixed;
@@ -31,8 +31,6 @@ body {
     justify-content: flex-end;
     margin-left: 50px; }
     .nav .nav__list .nav__list-item {
-      font-weight: 400;
-      text-transform: uppercase;
       margin-right: 50px;
       margin-top: 30px;
       cursor: pointer; }
@@ -62,22 +60,26 @@ body {
         color: #FF9E00; }
   .nav .nav__burger {
     display: none;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 0.5s ease; }
     .nav .nav__burger .line1 {
-      width: 35px;
-      height: 4px;
+      width: 40px;
+      height: 5px;
       background-color: #FEFEFE;
-      margin: 5px; }
+      margin: 5px;
+      transition: all 0.5s ease; }
     .nav .nav__burger .line2 {
-      width: 45px;
-      height: 4px;
+      width: 50px;
+      height: 5px;
       background-color: #FF9E00;
-      margin: 5px; }
+      margin: 5px;
+      transition: all 0.5s ease; }
     .nav .nav__burger .line3 {
-      width: 35px;
-      height: 4px;
+      width: 40px;
+      height: 5px;
       background-color: #FEFEFE;
-      margin: 5px; }
+      margin: 5px;
+      transition: all 0.5s ease; }
 
 /* -----------------Media Queries------------------- */
 @media screen and (max-width: 1024px) {
@@ -97,8 +99,9 @@ body {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 8vh;
-    padding-top: 20px;
+    top: 12vh;
+    padding-top: 40px;
+    margin-left: 0;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -106,6 +109,8 @@ body {
     background-color: #252525;
     transform: translateX(100%);
     transition: transform 0.4s ease-in; }
+    .nav .nav__list .nav__list-item {
+      margin-right: 0; }
   .nav .nav__burger {
     display: flex;
     flex-direction: column;
@@ -119,15 +124,17 @@ body {
     .nav .nav__logo .nav__logo-fill {
       width: auto;
       height: 50px; }
-  .nav .nav__list .nav__list-item .nav__list-a {
-    font-size: 2.8rem; }
+  .nav .nav__list {
+    width: 100%; }
+    .nav .nav__list .nav__list-item .nav__list-a {
+      font-size: 2.8rem; }
   .nav .nav__burger {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
     margin-top: 10px; } }
-.nav-active {
+.nav__active {
   transform: translateX(0%); }
 
 @keyframes navLinkFade {
@@ -137,5 +144,14 @@ body {
   to {
     opacity: 1;
     transform: translateX(0px); } }
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-11px, 10px); }
+
+.toggle .line2 {
+  opacity: 0;
+  transform: translateX(100%); }
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-11px, -10px); }
 
 /*# sourceMappingURL=stylesheet.css.map */
