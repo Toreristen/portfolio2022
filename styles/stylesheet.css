@@ -10,6 +10,7 @@
 body {
   background-color: #252525; }
 
+/* --------------------Navigation----------------- */
 .nav {
   position: fixed;
   z-index: 99;
@@ -30,6 +31,7 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-left: 50px;
+    background-color: #252525;
     transform: translateX(0%); }
     .nav .nav__list .nav__list-item {
       margin-right: 50px;
@@ -82,6 +84,71 @@ body {
       margin: 5px;
       transition: all 0.5s ease; }
 
+/* -------------------Header---------------------- */
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #252525;
+  overflow-x: hidden; }
+  .header .header__intro {
+    position: relative;
+    top: 20vh; }
+    .header .header__intro .header__txt {
+      color: #FEFEFE;
+      font-size: 8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-left: 50px; }
+    .header .header__intro .header__txt--active {
+      animation: textToRight 1s cubic-bezier(0.61, 0.07, 0.49, 1.31) forwards;
+      animation-delay: 3s; }
+    .header .header__intro .header__txt-clr {
+      margin: 0;
+      animation: changeColor .5s ease-out 2s forwards;
+      font-style: normal; }
+    .header .header__intro .header__txt--slide-in {
+      /*transform: translateX(-100%);*/
+      opacity: 0;
+      animation: txtSlideIn 2s ease-in .5s forwards; }
+    .header .header__intro .header__line {
+      width: 620px;
+      height: 5px;
+      background-color: #FF9E00;
+      margin-left: 50px; }
+    .header .header__intro .header__about {
+      color: #FEFEFE;
+      margin-left: 80px;
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: 2.4rem; }
+    .header .header__intro .header__cntr {
+      margin-top: 40px;
+      margin-left: 50px;
+      width: 620px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header .header__intro .header__cntr .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 154px;
+        height: 50px;
+        background-color: #252525;
+        border: 3px solid #FF9E00;
+        border-radius: 3px;
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: #FF9E00;
+        text-transform: uppercase;
+        transition: color 0.2s ease-out; }
+        .header .header__intro .header__cntr .btn:hover {
+          background-color: #FF9E00;
+          color: #252525;
+          font-weight: bold; }
+
 /* -----------------Media Queries------------------- */
 @media screen and (max-width: 1024px) {
   .nav .nav__logo {
@@ -119,7 +186,44 @@ body {
     margin-right: 45px;
     margin-top: 30px; }
   .nav .nav__active {
-    transform: translateX(0%); } }
+    transform: translateX(0%); }
+
+  .header .header__intro {
+    position: relative;
+    top: 20vh; }
+    .header .header__intro .header__txt {
+      font-size: 6rem;
+      margin-left: 50px; }
+    .header .header__intro .header__txt-clr {
+      margin: 0;
+      animation: changeColor .5s ease-out 2s forwards;
+      font-style: normal; }
+    .header .header__intro .header__line {
+      width: 450px;
+      height: 5px;
+      background-color: #FF9E00;
+      margin-left: 50px; }
+    .header .header__intro .header__about {
+      margin-left: 70px;
+      margin-top: 15px;
+      font-size: 1.8rem; }
+    .header .header__intro .header__cntr {
+      margin-top: 40px;
+      margin-left: 50px;
+      width: 450px; }
+      .header .header__intro .header__cntr .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 154px;
+        height: 50px;
+        background-color: #252525;
+        border: 3px solid #FF9E00;
+        border-radius: 3px;
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: #FF9E00;
+        text-transform: uppercase; } }
 @media screen and (max-width: 425px) {
   .nav .nav__logo {
     margin-left: 25px;
@@ -136,14 +240,56 @@ body {
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
-    margin-top: 10px; } }
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px); }
-  to {
-    opacity: 1;
-    transform: translateX(0px); } }
+    margin-top: 10px; }
+
+  .header .header__intro {
+    position: relative;
+    top: 18vh; }
+    .header .header__intro .header__txt {
+      font-size: 3.2rem;
+      margin-left: 25px; }
+    .header .header__intro .header__txt-clr {
+      margin: 0;
+      animation: changeColor .5s ease-out 2s forwards;
+      font-style: normal; }
+    .header .header__intro .header__line {
+      width: 240px;
+      margin-left: 25px; }
+    .header .header__intro .header__about {
+      margin-left: 40px;
+      margin-top: 15px;
+      font-size: 1.8rem;
+      max-width: 20ch; }
+    .header .header__intro .header__cntr {
+      margin-top: 20px;
+      margin-left: 25px;
+      width: 240px; }
+      .header .header__intro .header__cntr .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 154px;
+        height: 50px;
+        background-color: #252525;
+        border: 3px solid #FF9E00;
+        border-radius: 3px;
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: #FF9E00;
+        text-transform: uppercase;
+        transition: color 0.4s ease-in; } }
+@media screen and (max-width: 340px) {
+  .header .header__intro {
+    position: relative;
+    top: 18vh; }
+    .header .header__intro .header__txt {
+      font-size: 3.2rem;
+      margin-left: 25px; }
+    .header .header__intro .header__txt-clr {
+      margin: 0; }
+    .header .header__intro .header__line {
+      width: 240px;
+      margin-left: 25px; } }
 .toggle .line1 {
   transform: rotate(-45deg) translate(-11px, 10px); }
 
@@ -153,5 +299,23 @@ body {
 
 .toggle .line3 {
   transform: rotate(45deg) translate(-11px, -10px); }
+
+@keyframes textToRight {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(8%); } }
+@keyframes changeColor {
+  from {
+    color: #FEFEFE; }
+  to {
+    color: #FF9E00; } }
+@keyframes txtSlideIn {
+  from {
+    /*transform: translateX(-100%);*/
+    opacity: 0; }
+  to {
+    /*transform: translateX(0);*/
+    opacity: 1; } }
 
 /*# sourceMappingURL=stylesheet.css.map */
