@@ -169,10 +169,53 @@ body {
     justify-content: center;
     flex-wrap: wrap; }
     .projects .projects__wrapper .projects__item {
+      background-image: url(../images/blackjack.jpg);
+      background-size: cover;
+      background-position: center;
       margin: 10px 8px;
       background-color: #00B4D8;
-      width: 300px;
-      height: 240px; }
+      width: 420px;
+      height: 280px; }
+      .projects .projects__wrapper .projects__item .projects__overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        opacity: 0;
+        transition: 0.2s ease-in; }
+        .projects .projects__wrapper .projects__item .projects__overlay:hover {
+          opacity: 1; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__title {
+          color: #FEFEFE;
+          font-size: 3rem;
+          font-weight: 600;
+          margin-top: 20px;
+          text-transform: uppercase; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__about {
+          color: #FEFEFE;
+          font-size: 1.6rem;
+          margin: 10px 5px;
+          text-transform: uppercase; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
+          color: #FEFEFE;
+          text-decoration: underline;
+          text-transform: uppercase;
+          font-size: 1.6rem;
+          margin-top: 20px; }
+    .projects .projects__wrapper .img2 {
+      background-image: url(../images/dude.jpg); }
+    .projects .projects__wrapper .img3 {
+      background-image: url(../images/dude.jpg); }
+    .projects .projects__wrapper .img3 {
+      background-image: url(../images/dude.jpg); }
+    .projects .projects__wrapper .img4 {
+      background-image: url(../images/dude.jpg); }
+    .projects .projects__wrapper .img5 {
+      background-image: url(../images/dude.jpg); }
+    .projects .projects__wrapper .img6 {
+      background-image: url(../images/dude.jpg); }
 
 /* -----------------Media Queries------------------- */
 @media screen and (max-width: 1024px) {
@@ -192,7 +235,7 @@ body {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 12vh;
+    top: 8vh;
     padding-top: 40px;
     margin-left: 0;
     flex-direction: column;
@@ -251,21 +294,30 @@ body {
         text-transform: uppercase; }
 
   .projects .projects__header {
-    display: flex;
-    justify-content: center;
+    padding-top: 80px;
     font-size: 4.8rem; }
   .projects .projects__wrapper {
     margin: 0;
-    margin-top: 80px;
-    padding-bottom: 120px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
+    margin-top: 40px;
+    padding-bottom: 80px; }
     .projects .projects__wrapper .projects__item {
-      margin: 10px 8px; }
-      .projects .projects__wrapper .projects__item .projects__img {
-        width: 420px;
-        height: auto; } }
+      width: 340px;
+      height: 220px; }
+      .projects .projects__wrapper .projects__item .projects__overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        opacity: 0;
+        transition: 0.2s ease-in; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__title {
+          font-size: 2.4rem; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__about {
+          font-size: 1.4rem; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
+          font-size: 1.4rem; } }
 @media screen and (max-width: 425px) {
   .nav .nav__logo {
     margin-left: 25px;
@@ -319,7 +371,33 @@ body {
         font-weight: 500;
         color: #FF9E00;
         text-transform: uppercase;
-        transition: color 0.4s ease-in; } }
+        transition: color 0.4s ease-in; }
+
+  .projects .projects__header {
+    padding-top: 80px;
+    font-size: 2.8rem; }
+  .projects .projects__wrapper {
+    margin: 0;
+    margin-top: 40px;
+    padding-bottom: 80px; }
+    .projects .projects__wrapper .projects__item {
+      width: 340px;
+      height: 220px; }
+      .projects .projects__wrapper .projects__item .projects__overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        opacity: 0;
+        transition: 0.2s ease-in; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__title {
+          font-size: 2.4rem; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__about {
+          font-size: 1.4rem; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
+          font-size: 1.4rem; } }
 @media screen and (max-width: 340px) {
   .header .header__intro {
     position: relative;
@@ -331,7 +409,33 @@ body {
       margin: 0; }
     .header .header__intro .header__line {
       width: 240px;
-      margin-left: 25px; } }
+      margin-left: 25px; }
+
+  .projects .projects__header {
+    padding-top: 40px;
+    font-size: 2rem; }
+  .projects .projects__wrapper {
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 80px; }
+    .projects .projects__wrapper .projects__item {
+      width: 280px;
+      height: 180px; }
+      .projects .projects__wrapper .projects__item .projects__overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        opacity: 0;
+        transition: 0.2s ease-in; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__title {
+          font-size: 2rem; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__about {
+          font-size: 1.4rem; }
+        .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
+          font-size: 1.4rem; } }
 .toggle .line1 {
   transform: rotate(-45deg) translate(-11px, 10px); }
 

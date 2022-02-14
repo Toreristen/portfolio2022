@@ -229,12 +229,78 @@ body {
             flex-wrap: wrap;
 
                 .projects__item {
+                    background-image: url(../images/blackjack.jpg);
+                    background-size: cover;
+                    background-position: center;
                     margin: 10px 8px;
                     background-color: $blue;
-                    width: 300px;
-                    height: 240px;
+                    width: 420px;
+                    height: 280px;
+
+                        .projects__overlay {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            height: 100%;
+                            background: rgba(0,0,0,0.7);
+                            backdrop-filter: blur(5px);
+                            opacity: 0;
+                            transition: 0.2s ease-in;
+
+                                &:hover {
+                                    opacity: 1;
+                                }
+
+                                .projects__title {
+                                    color: $font-white;
+                                    font-size: 3rem;
+                                    font-weight: 600;
+                                    margin-top: 20px;
+                                    text-transform: uppercase;
+
+                                }
+
+                                .projects__about {
+                                    color: $font-white;
+                                    font-size: 1.6rem;
+                                    margin: 10px 5px;
+                                    text-transform: uppercase;
+                                }
+
+                                .projects__btn {
+                                    color: $font-white;
+                                    text-decoration: underline;
+                                    text-transform: uppercase;
+                                    font-size: 1.6rem;
+                                    margin-top: 20px;
+                                }
+                        }
 
                     
+                }
+
+                .img2 {
+                    background-image: url(../images/dude.jpg);
+                }
+
+                .img3 {
+                        background-image: url(../images/dude.jpg);
+                }
+
+                .img3 {
+                    background-image: url(../images/dude.jpg);
+                }
+
+                .img4 {
+                    background-image: url(../images/dude.jpg);
+                }
+
+                .img5 {
+                    background-image: url(../images/dude.jpg);
+                }
+
+                .img6 {
+                    background-image: url(../images/dude.jpg);
                 }
         }
 }
@@ -283,7 +349,7 @@ body {
             position: absolute;
             right: 0px;
             height: 92vh;
-            top: 12vh;
+            top: 8vh;
             padding-top: 40px;
             margin-left: 0;
             flex-direction: column;
@@ -374,27 +440,45 @@ body {
     .projects {
     
             .projects__header {
-                display: flex;
-                justify-content: center;
+                padding-top: 80px;
                 font-size: 4.8rem;
             }
     
             .projects__wrapper {
                 margin: 0;
-                margin-top: 80px;
-                padding-bottom: 120px;
-                display: flex;
-                justify-content:center;
-                flex-wrap: wrap;
+                margin-top: 40px;
+                padding-bottom: 80px;
     
                     .projects__item {
-                        margin: 10px 8px;                        
+                        width: 340px;
+                        height: 220px;
     
-                            .projects__img {
-                                width: 420px;
-                                height: auto;
+                            .projects__overlay {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                height: 100%;
+                                background: rgba(0,0,0,0.7);
+                                backdrop-filter: blur(5px);
+                                opacity: 0;
+                                transition: 0.2s ease-in;
+    
+                                    .projects__title {
+                                        font-size: 2.4rem;
+                                    }
+    
+                                    .projects__about {
+                                        font-size: 1.4rem;
+                                    }
+    
+                                    .projects__btn {
+                                        font-size: 1.4rem;
+                                    }
                             }
+    
+                        
                     }
+    
             }
     }
     
@@ -497,6 +581,51 @@ body {
             }
             
     }
+
+    .projects {
+    
+        .projects__header {
+            padding-top: 80px;
+            font-size: 2.8rem;
+        }
+
+        .projects__wrapper {
+            margin: 0;
+            margin-top: 40px;
+            padding-bottom: 80px;
+
+                .projects__item {
+                    width: 340px;
+                    height: 220px;
+
+                        .projects__overlay {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            height: 100%;
+                            background: rgba(0,0,0,0.7);
+                            backdrop-filter: blur(5px);
+                            opacity: 0;
+                            transition: 0.2s ease-in;
+
+                                .projects__title {
+                                    font-size: 2.4rem;
+                                }
+
+                                .projects__about {
+                                    font-size: 1.4rem;
+                                }
+
+                                .projects__btn {
+                                    font-size: 1.4rem;
+                                }
+                        }
+
+                    
+                }
+
+        }
+}
 }
 
 @media screen and (max-width:340px) {
@@ -524,6 +653,51 @@ body {
             }
             
     }
+
+    .projects {
+    
+        .projects__header {
+            padding-top: 40px;
+            font-size: 2rem;
+        }
+
+        .projects__wrapper {
+            margin: 0;
+            margin-top: 20px;
+            padding-bottom: 80px;
+
+                .projects__item {
+                    width: 280px;
+                    height: 180px;
+
+                        .projects__overlay {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            height: 100%;
+                            background: rgba(0,0,0,0.7);
+                            backdrop-filter: blur(5px);
+                            opacity: 0;
+                            transition: 0.2s ease-in;
+
+                                .projects__title {
+                                    font-size: 2rem;
+                                }
+
+                                .projects__about {
+                                    font-size: 1.4rem;
+                                }
+
+                                .projects__btn {
+                                    font-size: 1.4rem;
+                                }
+                        }
+
+                    
+                }
+
+        }
+}
 }
 
 .toggle .line1 {
