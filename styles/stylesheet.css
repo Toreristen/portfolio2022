@@ -217,7 +217,46 @@ body {
     .projects .projects__wrapper .img6 {
       background-image: url(../images/dude.jpg); }
 
-/* -----------------Media Queries------------------- */
+.about {
+  background-color: #FEFEFE;
+  width: 100%;
+  height: 100vh; }
+  .about .about__title {
+    padding-top: 120px;
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase; }
+
+.contact {
+  background-color: #252525;
+  width: 100%;
+  height: 100vh; }
+  .contact .contact__title {
+    color: #FEFEFE;
+    padding-top: 120px;
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase; }
+
+.footer {
+  width: auto;
+  height: 10vh;
+  border-top: 6px solid #FF9E00;
+  width: auto;
+  margin: 0 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer .footer__description {
+    color: #FEFEFE;
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle; }
+
+/*#region -----------------Media Queries------------------- */
 @media screen and (max-width: 1024px) {
   .nav .nav__logo {
     margin-left: 50px;
@@ -226,7 +265,12 @@ body {
       width: auto;
       height: 50px; }
   .nav .nav__list .nav__list-item .nav__list-a {
-    font-size: 2.8rem; } }
+    font-size: 2.8rem; }
+
+  .footer {
+    margin: 0 100px; }
+    .footer .footer__description {
+      font-size: 2.8rem; } }
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden; }
@@ -317,7 +361,12 @@ body {
         .projects .projects__wrapper .projects__item .projects__overlay .projects__about {
           font-size: 1.4rem; }
         .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
-          font-size: 1.4rem; } }
+          font-size: 1.4rem; }
+
+  .footer {
+    margin: 0 50px; }
+    .footer .footer__description {
+      font-size: 2.4rem; } }
 @media screen and (max-width: 425px) {
   .nav .nav__logo {
     margin-left: 25px;
@@ -397,7 +446,13 @@ body {
         .projects .projects__wrapper .projects__item .projects__overlay .projects__about {
           font-size: 1.4rem; }
         .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
-          font-size: 1.4rem; } }
+          font-size: 1.4rem; }
+
+  .footer {
+    margin: 0 25px; }
+    .footer .footer__description {
+      font-size: 2rem;
+      max-width: 18ch; } }
 @media screen and (max-width: 340px) {
   .header .header__intro {
     position: relative;
@@ -436,6 +491,8 @@ body {
           font-size: 1.4rem; }
         .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
           font-size: 1.4rem; } }
+/*#endregion*/
+/*#region ------------Burger Toggle------------ */
 .toggle .line1 {
   transform: rotate(-45deg) translate(-11px, 10px); }
 
@@ -446,6 +503,8 @@ body {
 .toggle .line3 {
   transform: rotate(45deg) translate(-11px, -10px); }
 
+/*#endregion*/
+/*#region ----------Keyframes-------------- */
 @keyframes textToRight {
   from {
     transform: translateX(0); }
@@ -463,5 +522,6 @@ body {
   to {
     /*transform: translateX(0);*/
     opacity: 1; } }
+/*#endregion*/
 
 /*# sourceMappingURL=stylesheet.css.map */

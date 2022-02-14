@@ -6,9 +6,7 @@ body {
     background-color: $primary-color;
 }
 
-
 /* --------------------Navigation----------------- */
-
 .nav {
     position: fixed;
     z-index: 99;
@@ -305,9 +303,56 @@ body {
         }
 }
 
+.about {
+    background-color: $font-white;
+    width: 100%;
+    height: 100vh;
 
+        .about__title {
+            padding-top: 120px;
+            font-size: 4.8rem;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
 
-/* -----------------Media Queries------------------- */
+        }
+}
+
+.contact {
+    background-color: $primary-color;
+    width: 100%;
+    height: 100vh;
+
+        .contact__title {
+            color: $font-white;
+            padding-top: 120px;
+            font-size: 4.8rem;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase;
+        }
+}
+
+.footer {
+    width: auto;
+    height: 10vh;
+    border-top: 6px solid $orange;
+    width: auto;
+    margin: 0 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .footer__description {
+            color: $font-white;
+            font-size: 2.8rem;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+        }
+}
+
+/*#region -----------------Media Queries------------------- */
 @media screen and (max-width: 1024px) {
 
     .nav {
@@ -334,6 +379,14 @@ body {
             }
 
         }
+    }
+
+    .footer {
+        margin: 0 100px;
+    
+            .footer__description {
+                font-size: 2.8rem;
+            }
     }
 }
 
@@ -482,6 +535,13 @@ body {
             }
     }
     
+    .footer {
+        margin: 0 50px;
+    
+            .footer__description {
+                font-size: 2.4rem;
+            }
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -626,6 +686,15 @@ body {
 
         }
 }
+
+.footer {
+    margin: 0 25px;
+
+        .footer__description {
+            font-size: 2rem;
+            max-width: 18ch;
+        }
+}
 }
 
 @media screen and (max-width:340px) {
@@ -699,7 +768,9 @@ body {
         }
 }
 }
+/*#endregion*/
 
+/*#region ------------Burger Toggle------------ */
 .toggle .line1 {
     transform: rotate(-45deg) translate(-11px,10px);
 }
@@ -712,7 +783,9 @@ body {
 .toggle .line3 {
     transform: rotate(45deg) translate(-11px,-10px);
 }
+/*#endregion*/
 
+/*#region ----------Keyframes-------------- */
 
 @keyframes textToRight {
     from {
@@ -742,3 +815,4 @@ body {
         opacity: 1;
     }
 }
+/*#endregion*/
