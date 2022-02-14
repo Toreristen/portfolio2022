@@ -31,7 +31,8 @@ body {
             list-style-type: none;
             display: flex;
             justify-content: flex-end;
-            margin-left: 50px;           
+            margin-left: 50px;
+            transform: translateX(0%);           
 
                 .nav__list-item {
                     margin-right: 50px;
@@ -177,6 +178,10 @@ body {
             margin-top: 30px;
             
         }
+
+        .nav__active {
+            transform: translateX(0%);
+        }
     }
 }
 
@@ -221,9 +226,7 @@ body {
     }
 }
 
-.nav__active {
-    transform: translateX(0%);
-}
+
 
 @keyframes navLinkFade{
     from{
