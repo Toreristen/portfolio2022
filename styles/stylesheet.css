@@ -22,7 +22,7 @@ body {
   background-color: #252525; }
   .nav .nav__logo {
     margin-left: 50px;
-    margin-top: 30px; }
+    padding: 10px 0; }
     .nav .nav__logo .nav__logo-fill {
       width: auto;
       height: auto; }
@@ -158,13 +158,13 @@ body {
     color: #FEFEFE;
     display: flex;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 40px;
     font-size: 4.8rem;
     text-transform: uppercase; }
   .projects .projects__wrapper {
     width: 100%;
-    margin-top: 80px;
-    padding-bottom: 120px;
+    margin-top: 40px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
@@ -222,23 +222,63 @@ body {
   width: 100%;
   height: 100vh; }
   .about .about__title {
-    padding-top: 120px;
+    padding-top: 40px;
     font-size: 4.8rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase; }
 
 .contact {
+  position: relative;
   background-color: #252525;
   width: 100%;
-  height: 100vh; }
+  height: auto; }
+  .contact .contact__tri {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%; }
   .contact .contact__title {
     color: #FEFEFE;
-    padding-top: 120px;
+    padding-top: 180px;
     font-size: 4.8rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase; }
+  .contact .contact__txt {
+    color: #FEFEFE;
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 25px; }
+  .contact .contact__some {
+    display: flex;
+    justify-content: center; }
+    .contact .contact__some .contact__some-icon {
+      width: 50px;
+      margin: 45px 32px; }
+  .contact .contact__container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contact .contact__container form input {
+      width: 812px;
+      height: 50px;
+      border: none;
+      margin-bottom: 8px;
+      padding-left: 8px;
+      padding-bottom: 10px; }
+    .contact .contact__container form textarea {
+      width: 812px;
+      min-height: 250px;
+      height: 330px;
+      border: none;
+      padding-left: 8px;
+      padding-top: 8px;
+      margin-bottom: 40px;
+      resize: vertical; }
+    .contact .contact__container form ::placeholder {
+      font-size: 1.8rem; }
 
 .footer {
   width: auto;
