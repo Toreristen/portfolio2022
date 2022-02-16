@@ -160,6 +160,7 @@ body {
     justify-content: center;
     padding-top: 40px;
     font-size: 4.8rem;
+    font-weight: 500;
     text-transform: uppercase; }
   .projects .projects__wrapper {
     width: 100%;
@@ -245,12 +246,16 @@ body {
     font-weight: 600;
     text-align: center;
     text-transform: uppercase; }
-  .contact .contact__txt {
-    color: #FEFEFE;
-    font-size: 2.8rem;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 25px; }
+  .contact .contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contact .contact__wrapper .contact__txt {
+      color: #FEFEFE;
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-top: 25px;
+      text-align: center; }
   .contact .contact__some {
     display: flex;
     justify-content: center; }
@@ -264,13 +269,16 @@ body {
     .contact .contact__container form input {
       width: 812px;
       height: 50px;
+      font-size: 1.8rem;
       border: none;
       margin-bottom: 8px;
       padding-left: 8px;
       padding-bottom: 10px; }
     .contact .contact__container form textarea {
+      font-size: 1.8rem;
       width: 812px;
       min-height: 250px;
+      max-height: 400px;
       height: 330px;
       border: none;
       padding-left: 8px;
@@ -279,6 +287,23 @@ body {
       resize: vertical; }
     .contact .contact__container form ::placeholder {
       font-size: 1.8rem; }
+    .contact .contact__container form .contact__btn {
+      background-color: #252525;
+      width: 154px;
+      height: 50px;
+      border: 3px solid #FF9E00;
+      border-radius: 3px;
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: #FF9E00;
+      text-transform: uppercase;
+      transition: color 0.2s ease-out;
+      margin-bottom: 220px;
+      cursor: pointer; }
+      .contact .contact__container form .contact__btn:hover {
+        background-color: #FF9E00;
+        color: #252525;
+        font-weight: bold; }
 
 .footer {
   width: auto;
@@ -403,11 +428,65 @@ body {
         .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
           font-size: 1.4rem; }
 
+  .contact .contact__title {
+    font-size: 4.8rem;
+    padding-top: 140px; }
+  .contact .contact__wrapper {
+    margin: 0 45px; }
+    .contact .contact__wrapper .contact__txt {
+      font-size: 1.6rem;
+      width: auto; }
+  .contact .contact__some {
+    display: flex;
+    justify-content: center; }
+    .contact .contact__some .contact__some-icon {
+      width: 50px;
+      margin: 45px 32px; }
+  .contact .contact__container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px; }
+    .contact .contact__container form input {
+      width: 100%;
+      height: 50px;
+      font-size: 1.8rem;
+      border: none;
+      margin-bottom: 8px;
+      padding-left: 8px;
+      padding-bottom: 10px; }
+    .contact .contact__container form textarea {
+      font-size: 1.8rem;
+      width: 100%;
+      min-height: 250px;
+      max-height: 400px;
+      height: 330px;
+      border: none;
+      padding-left: 8px;
+      padding-top: 8px;
+      margin-bottom: 40px;
+      resize: vertical; }
+    .contact .contact__container form ::placeholder {
+      font-size: 1.8rem; }
+    .contact .contact__container form .contact__btn {
+      background-color: #252525;
+      width: 154px;
+      height: 50px;
+      border: 3px solid #FF9E00;
+      border-radius: 3px;
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: #FF9E00;
+      text-transform: uppercase;
+      transition: color 0.2s ease-out;
+      margin-bottom: 220px;
+      cursor: pointer; }
+
   .footer {
     margin: 0 50px; }
     .footer .footer__description {
       font-size: 2.4rem; } }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   .nav .nav__logo {
     margin-left: 25px;
     margin-top: 10px; }
@@ -463,8 +542,8 @@ body {
         transition: color 0.4s ease-in; }
 
   .projects .projects__header {
-    padding-top: 80px;
-    font-size: 2.8rem; }
+    padding-top: 40px;
+    font-size: 2.4rem; }
   .projects .projects__wrapper {
     margin: 0;
     margin-top: 40px;
@@ -487,6 +566,60 @@ body {
           font-size: 1.4rem; }
         .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
           font-size: 1.4rem; }
+
+  .contact .contact__title {
+    font-size: 2.4rem;
+    padding-top: 76px; }
+  .contact .contact__wrapper {
+    margin: 0 25px; }
+    .contact .contact__wrapper .contact__txt {
+      font-size: 1.6rem;
+      width: auto; }
+  .contact .contact__some {
+    display: flex;
+    justify-content: center; }
+    .contact .contact__some .contact__some-icon {
+      width: 50px;
+      margin: 25px 32px; }
+  .contact .contact__container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25px; }
+    .contact .contact__container form input {
+      width: 100%;
+      height: 50px;
+      font-size: 1.8rem;
+      border: none;
+      margin-bottom: 8px;
+      padding-left: 8px;
+      padding-bottom: 10px; }
+    .contact .contact__container form textarea {
+      font-size: 1.8rem;
+      width: 100%;
+      min-height: 250px;
+      max-height: 400px;
+      height: 200px;
+      border: none;
+      padding-left: 8px;
+      padding-top: 8px;
+      margin-bottom: 40px;
+      resize: vertical; }
+    .contact .contact__container form ::placeholder {
+      font-size: 1.8rem; }
+    .contact .contact__container form .contact__btn {
+      background-color: #252525;
+      width: 154px;
+      height: 50px;
+      border: 3px solid #FF9E00;
+      border-radius: 3px;
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: #FF9E00;
+      text-transform: uppercase;
+      transition: color 0.2s ease-out;
+      margin-bottom: 100px;
+      cursor: pointer; }
 
   .footer {
     margin: 0 25px; }
@@ -530,7 +663,61 @@ body {
         .projects .projects__wrapper .projects__item .projects__overlay .projects__about {
           font-size: 1.4rem; }
         .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
-          font-size: 1.4rem; } }
+          font-size: 1.4rem; }
+
+  .contact .contact__title {
+    font-size: 2.4rem;
+    padding-top: 76px; }
+  .contact .contact__wrapper {
+    margin: 0 25px; }
+    .contact .contact__wrapper .contact__txt {
+      font-size: 1.6rem;
+      width: auto; }
+  .contact .contact__some {
+    display: flex;
+    justify-content: center; }
+    .contact .contact__some .contact__some-icon {
+      width: 50px;
+      margin: 25px 32px; }
+  .contact .contact__container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 25px; }
+    .contact .contact__container form input {
+      width: 100%;
+      height: 50px;
+      font-size: 1.8rem;
+      border: none;
+      margin-bottom: 8px;
+      padding-left: 8px;
+      padding-bottom: 10px; }
+    .contact .contact__container form textarea {
+      font-size: 1.8rem;
+      width: 100%;
+      min-height: 100px;
+      max-height: 400px;
+      height: 200px;
+      border: none;
+      padding-left: 8px;
+      padding-top: 8px;
+      margin-bottom: 40px;
+      resize: vertical; }
+    .contact .contact__container form ::placeholder {
+      font-size: 1.8rem; }
+    .contact .contact__container form .contact__btn {
+      background-color: #252525;
+      width: 154px;
+      height: 50px;
+      border: 3px solid #FF9E00;
+      border-radius: 3px;
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: #FF9E00;
+      text-transform: uppercase;
+      transition: color 0.2s ease-out;
+      margin-bottom: 100px;
+      cursor: pointer; } }
 /*#endregion*/
 /*#region ------------Burger Toggle------------ */
 .toggle .line1 {

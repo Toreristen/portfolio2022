@@ -120,9 +120,13 @@
         <section class="contact">
             <img class="contact__tri" src="./logo/Polygon 6.svg" alt="">
             <h2 class="contact__title">contact me</h2>
-            <p class="contact__txt">Thank you for spending the time to look at my portfolio.
-            </p>
-            <p class="contact__txt">If you have any questions or want to work together feel free to <br> contact me or check out my GitHub and LinkedIn.</p>
+            
+            <div class="contact__wrapper">
+                <p class="contact__txt">Thank you for spending the time to look at my portfolio.
+                </p>
+                <p class="contact__txt">If you have any questions or want to work together feel free to <br> contact me or check out my GitHub and LinkedIn.</p>
+            </div>
+
             <div class="contact__some">
                 <a href="#"><img class="contact__some-icon" src="./logo/linkedind.svg" alt="LinkedIn icon"></a>
                 <a href="#"><img class="contact__some-icon" src="./logo/github.svg" alt="GitHub icon"></a>
@@ -131,7 +135,8 @@
                 <form action="">
                     <input type="text" id="name" name="name" placeholder="Your name">
                     <input type="text" id="email" name="email" placeholder="Your email">
-                    <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Your message"></textarea>                    
+                    <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <button class="contact__btn" type="button">submit</button>                    
                 </form>
             </div>
 
