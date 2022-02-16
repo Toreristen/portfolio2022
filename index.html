@@ -13,15 +13,15 @@
 <body>
     <nav class="nav">
 
-        <a href="#" class="nav__logo">
+        <a href="#header" class="nav__logo">
             <img class="nav__logo-fill" src="/logo/logo.svg" alt="logo">
         </a>
 
         <ul class="nav__list">
-            <li class="nav__list-item"><a href="#" class="nav__list-a">work</a></li>
-            <li class="nav__list-item"><a href="#" class="nav__list-a">about</a></li>
-            <li class="nav__list-item"><a href="#" class="nav__list-a">skills</a></li>
-            <li class="nav__list-item"><a href="#" class="nav__list-a">contact</a></li>
+            <li class="nav__list-item"><a href="#projects" class="nav__list-a">work</a></li>
+            <li class="nav__list-item"><a id="menu2" href="#about" class="nav__list-a">about</a></li>
+            <li class="nav__list-item"><a id="menu3" href="#skills" class="nav__list-a">skills</a></li>
+            <li class="nav__list-item"><a id="menu4" href="#contact" class="nav__list-a">contact</a></li>
         </ul>
 
         <div class="nav__burger">
@@ -32,7 +32,7 @@
 
     </nav>
      
-    <header class="header">
+    <header id="header" class="header">
         <div class="header__intro">
             <p class="header__txt">hi</p>
             <p class="header__txt">i'm <em class="header__txt header__txt-clr">tore</em></p>
@@ -47,7 +47,7 @@
     </header>
 
     <main>
-        <section class="projects">
+        <section id="projects" class="projects">
             <h1 class="projects__header">My work and projects</h1>
             <div class="projects__wrapper">
 
@@ -113,11 +113,21 @@
             </div>
         </section>
 
-        <section class="about">
+        <section id="about" class="about">
             <h2 class="about__title">Who am i</h2>
+
+            <div class="about__container">
+                <p class="about__txt">Hi my name is Tore Eskildsen and I am currently studying Multi Media Design at UCL in Odense.</p>
+                <br>
+                <p class="about__txt">I've always had a thing for creating stuff. Anything from Lego to Webdesign. Bringing an idea to life is one of my all time favorite pleasures.</p>
+                <br>
+                <p class="about__txt">This is the reason why I decided to pursue my passion in web development. From designing to creating functional, dynamic websites that is usable to everyone.</p>
+                <p class="about__txt">It's something quite remarkable..</p>
+            </div>
+
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2 class="skills__header"> my Skills</h2>
             <div class="skills__container">
                 <img src="./images/skills/html&css.svg" alt="html & css" class="skills__img">
@@ -131,7 +141,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <img class="contact__tri" src="./logo/Polygon 6.svg" alt="">
             <h2 class="contact__title">contact me</h2>
 
