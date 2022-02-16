@@ -229,6 +229,25 @@ body {
     text-align: center;
     text-transform: uppercase; }
 
+.skills {
+  background-color: #FEFEFE; }
+  .skills .skills__header {
+    font-size: 4.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  .skills .skills__container {
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6.5%;
+    justify-content: space-evenly;
+    padding-bottom: 80px; }
+    .skills .skills__container .skills__img {
+      width: 20%;
+      height: auto;
+      margin-bottom: 40px; }
+
 .contact {
   position: relative;
   background-color: #252525;
@@ -332,6 +351,23 @@ body {
   .nav .nav__list .nav__list-item .nav__list-a {
     font-size: 2.8rem; }
 
+  .skills .skills__header {
+    font-size: 4.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  .skills .skills__container {
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6.5%;
+    justify-content: space-evenly;
+    padding-bottom: 80px; }
+    .skills .skills__container .skills__img {
+      width: 20%;
+      height: auto;
+      margin-bottom: 40px; }
+
   .footer {
     margin: 0 100px; }
     .footer .footer__description {
@@ -427,6 +463,17 @@ body {
           font-size: 1.4rem; }
         .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
           font-size: 1.4rem; }
+
+  .skills .skills__header {
+    font-size: 4.8rem;
+    margin-bottom: 40px; }
+  .skills .skills__container {
+    margin: 0 50px;
+    gap: 6.5%; }
+    .skills .skills__container .skills__img {
+      width: 20%;
+      height: auto;
+      margin-bottom: 40px; }
 
   .contact .contact__title {
     font-size: 4.8rem;
@@ -566,6 +613,18 @@ body {
           font-size: 1.4rem; }
         .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
           font-size: 1.4rem; }
+
+  .skills .skills__header {
+    font-size: 2.4rem;
+    margin-bottom: 40px; }
+  .skills .skills__container {
+    margin: 0 25px;
+    padding-bottom: 40px;
+    gap: 10%; }
+    .skills .skills__container .skills__img {
+      width: 45%;
+      height: auto;
+      margin-bottom: 40px; }
 
   .contact .contact__title {
     font-size: 2.4rem;
