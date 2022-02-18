@@ -461,7 +461,7 @@ body {
                     color: $orange;
                     text-transform: uppercase;
                     transition: color 0.2s ease-out;
-                    margin-bottom: 220px;
+                    margin-bottom: 180px;
                     cursor: pointer;
 
                     &:hover {
@@ -475,6 +475,7 @@ body {
 
 }
 
+/* -------------------Footer----------------------*/
 .footer {
     width: auto;
     height: 10vh;
@@ -494,7 +495,7 @@ body {
         }
 }
 
-/*#region -----------------Media Queries------------------- */
+/*#region ------------Media Queries---------- */
 @media screen and (max-width: 1024px) {
 
     .nav {
@@ -1403,7 +1404,7 @@ body {
 }
 /*#endregion*/
 
-/*#region ------------Burger Toggle------------ */
+/*#region ------------Burger Toggle---------- */
 .toggle .line1 {
     transform: rotate(-45deg) translate(-11px,10px);
 }
@@ -1418,7 +1419,7 @@ body {
 }
 /*#endregion*/
 
-/*#region ----------Keyframes-------------- */
+/*#region ------------Keyframes-------------- */
 
 @keyframes textToRight {
     from {
