@@ -172,7 +172,7 @@ body {
     justify-content: center;
     flex-wrap: wrap; }
     .projects .projects__wrapper .projects__item {
-      background-image: url(../images/blackjack.jpg);
+      background-image: url(../images/projekt6.png);
       background-size: cover;
       background-position: center;
       margin: 10px 8px;
@@ -193,14 +193,13 @@ body {
         .projects .projects__wrapper .projects__item .projects__overlay .projects__title {
           color: #FEFEFE;
           font-size: 3rem;
-          font-weight: 600;
-          margin-top: 20px;
-          text-transform: uppercase; }
+          font-weight: 500;
+          margin-top: 20px; }
         .projects .projects__wrapper .projects__item .projects__overlay .projects__about {
           color: #FEFEFE;
           font-size: 1.6rem;
-          margin: 10px 5px;
-          text-transform: uppercase; }
+          margin: 10px 25px;
+          text-align: center; }
         .projects .projects__wrapper .projects__item .projects__overlay .projects__btn {
           color: #FEFEFE;
           text-decoration: underline;
@@ -208,17 +207,17 @@ body {
           font-size: 1.6rem;
           margin-top: 20px; }
     .projects .projects__wrapper .img2 {
-      background-image: url(../images/dude.jpg); }
+      background-image: url(../images/project3.png); }
     .projects .projects__wrapper .img3 {
-      background-image: url(../images/dude.jpg); }
+      background-image: url(../images/project5.png); }
     .projects .projects__wrapper .img3 {
-      background-image: url(../images/dude.jpg); }
+      background-image: url(../images/project4.png); }
     .projects .projects__wrapper .img4 {
-      background-image: url(../images/dude.jpg); }
+      background-image: url(../images/project5.png); }
     .projects .projects__wrapper .img5 {
-      background-image: url(../images/dude.jpg); }
+      background-image: url(../images/blackjack_2.jpg.png); }
     .projects .projects__wrapper .img6 {
-      background-image: url(../images/dude.jpg); }
+      background-image: url(../images/project1.png); }
 
 .about {
   padding-top: 8vh;
@@ -258,11 +257,13 @@ body {
     flex-wrap: wrap;
     gap: 6.5%;
     justify-content: space-evenly;
-    padding-bottom: 80px; }
+    /*padding-bottom: 80px;*/ }
     .skills .skills__container .skills__img {
       width: 20%;
       height: auto;
       margin-bottom: 40px; }
+  .skills .contact-a-scroll {
+    height: 8vh; }
 
 .contact {
   position: relative;
@@ -401,7 +402,7 @@ body {
     flex-wrap: wrap;
     gap: 6.5%;
     justify-content: space-evenly;
-    padding-bottom: 80px; }
+    /*padding-bottom: 80px;*/ }
     .skills .skills__container .skills__img {
       width: 20%;
       height: auto;
@@ -603,7 +604,7 @@ body {
 @media screen and (max-width: 430px) {
   .nav .nav__logo {
     margin-left: 25px;
-    margin-top: 10px; }
+    /*margin-top: 10px;*/ }
     .nav .nav__logo .nav__logo-fill {
       width: auto;
       height: 50px; }
@@ -616,7 +617,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
-    margin-top: 10px; }
+    /*margin-top: 10px;*/ }
 
   .header .header__intro {
     position: relative;
@@ -706,16 +707,18 @@ body {
     margin-bottom: 40px; }
   .skills .skills__container {
     margin: 0 25px;
-    padding-bottom: 40px;
+    /*padding-bottom: 40px;*/
     gap: 10%; }
     .skills .skills__container .skills__img {
       width: 45%;
       height: auto;
       margin-bottom: 40px; }
+  .skills .contact-a-scroll {
+    height: 10vh; }
 
   .contact .contact__title {
     font-size: 2.4rem;
-    /*padding-top: 76px;*/ }
+    padding-top: 20px; }
   .contact .contact__wrapper {
     margin: 0 25px; }
     .contact .contact__wrapper .contact__txt {
@@ -810,7 +813,7 @@ body {
     padding-bottom: 80px; }
     .projects .projects__wrapper .projects__item {
       width: 280px;
-      height: 180px; }
+      height: 220px; }
       .projects .projects__wrapper .projects__item .projects__overlay {
         display: flex;
         flex-direction: column;
@@ -845,7 +848,7 @@ body {
 
   .contact .contact__title {
     font-size: 2.4rem;
-    padding-top: 76px; }
+    padding-top: 20px; }
   .contact .contact__wrapper {
     margin: 0 25px; }
     .contact .contact__wrapper .contact__txt {

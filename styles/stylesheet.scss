@@ -229,7 +229,7 @@ body {
             flex-wrap: wrap;
 
                 .projects__item {
-                    background-image: url(../images/blackjack.jpg);
+                    background-image: url(../images/projekt6.png);
                     background-size: cover;
                     background-position: center;
                     margin: 10px 8px;
@@ -254,17 +254,16 @@ body {
                                 .projects__title {
                                     color: $font-white;
                                     font-size: 3rem;
-                                    font-weight: 600;
+                                    font-weight: 500;
                                     margin-top: 20px;
-                                    text-transform: uppercase;
 
                                 }
 
                                 .projects__about {
                                     color: $font-white;
                                     font-size: 1.6rem;
-                                    margin: 10px 5px;
-                                    text-transform: uppercase;
+                                    margin: 10px 25px;
+                                    text-align: center;
                                 }
 
                                 .projects__btn {
@@ -280,27 +279,27 @@ body {
                 }
 
                 .img2 {
-                    background-image: url(../images/dude.jpg);
+                    background-image: url(../images/project3.png);
                 }
 
                 .img3 {
-                        background-image: url(../images/dude.jpg);
+                    background-image: url(../images/project5.png);
                 }
 
                 .img3 {
-                    background-image: url(../images/dude.jpg);
+                    background-image: url(../images/project4.png);
                 }
 
                 .img4 {
-                    background-image: url(../images/dude.jpg);
+                    background-image: url(../images/project5.png);
                 }
 
                 .img5 {
-                    background-image: url(../images/dude.jpg);
+                    background-image: url(../images/blackjack_2.jpg.png);
                 }
 
                 .img6 {
-                    background-image: url(../images/dude.jpg);
+                    background-image: url(../images/project1.png);
                 }
         }
 }
@@ -360,13 +359,17 @@ body {
             flex-wrap: wrap;
             gap: 6.5%;
             justify-content: space-evenly;
-            padding-bottom: 80px;
+            /*padding-bottom: 80px;*/
 
                 .skills__img {
                     width: 20%;
                     height: auto;
                     margin-bottom: 40px;
                 }
+        }
+
+        .contact-a-scroll {
+            height: 8vh;
         }
 }
 
@@ -574,7 +577,7 @@ body {
                 flex-wrap: wrap;
                 gap: 6.5%;
                 justify-content: space-evenly;
-                padding-bottom: 80px;
+                /*padding-bottom: 80px;*/
     
                     .skills__img {
                         width: 20%;
@@ -900,7 +903,7 @@ body {
 
         .nav__logo {
             margin-left: 25px;
-            margin-top: 10px;
+            /*margin-top: 10px;*/
     
                 .nav__logo-fill {
                     width: auto;
@@ -929,7 +932,7 @@ body {
             flex-direction: column;
             align-items: center;
             margin-right: 20px;
-            margin-top: 10px;
+            /*margin-top: 10px;*/
             
         }
     }
@@ -1081,7 +1084,7 @@ body {
 
         .skills__container {
             margin: 0 25px;
-            padding-bottom: 40px;
+            /*padding-bottom: 40px;*/
             gap: 10%;
             
 
@@ -1091,13 +1094,17 @@ body {
                     margin-bottom: 40px;
                 }
         }
+
+        .contact-a-scroll {
+            height: 10vh;
+        }
 }
 
     .contact {
         
         .contact__title {
             font-size: 2.4rem;
-            /*padding-top: 76px;*/
+            padding-top: 20px;
         }
 
         .contact__wrapper {
@@ -1259,7 +1266,7 @@ body {
 
                 .projects__item {
                     width: 280px;
-                    height: 180px;
+                    height: 220px;
 
                         .projects__overlay {
                             display: flex;
@@ -1324,7 +1331,7 @@ body {
         
         .contact__title {
             font-size: 2.4rem;
-            padding-top: 76px;
+            padding-top: 20px;
         }
 
         .contact__wrapper {
