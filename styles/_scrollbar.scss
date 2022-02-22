@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+    width: 0.6vw;
+}
+
+::-webkit-scrollbar-track {
+    background: $primary-color;
+    margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $orange;
+    border-radius: 1vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $dark-orange;
+}

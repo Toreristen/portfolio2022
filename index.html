@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Tore Eskildsen personal portfolio. Tore is a multimedia design student looking for an internship">
+    <meta name="theme-color" content="#252525">
+    <meta name="author" content="Tore Eskildsen">
+    <meta name="keywords" content="Tore Eskildsen, portfolio, frontend, webdevelopment, multimedia design, internship, webdesign, programming, wordpress, cms, praktik, webudvikling, multimediedesigner, programmør">
     <title>Tore Eskildsen</title>
     <link rel="stylesheet" href="./styles/stylesheet.css">
     <link rel="stylesheet" href="https://use.typekit.net/oll6jzv.css">
-    <script src="/js/burger.js" defer></script>
+    <script src="./js/burger.js" defer></script>
     <script src="/js/intro.js" defer></script>
 </head>
 <body>
     <nav class="nav">
 
         <a href="#header" class="nav__logo">
-            <img class="nav__logo-fill" src="/logo/logo.svg" alt="logo">
+            <img class="nav__logo-fill" src="./logo/logo.svg" alt="logo">
         </a>
 
         <ul class="nav__list">
@@ -160,12 +164,13 @@
                 <a href="https://www.linkedin.com/in/tore-eskildsen-302b47193/" target="_blank"><img class="contact__some-icon" src="./logo/linkedind.svg" alt="LinkedIn icon"></a>
                 <a href="https://github.com/Toreristen" target="_blank"><img class="contact__some-icon" src="./logo/github.svg" alt="GitHub icon"></a>
             </div>
+
             <div class="contact__container">
-                <form action="mailto:tore.machete@hotmail.com" method="post" enctype="multipart/form-data" name="EmailForm">
-                    <input type="text" id="name" name="name" placeholder="Your name">
-                    <input type="text" id="email" name="email" placeholder="Your email">
-                    <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Your message"></textarea>
-                    <button class="contact__btn" type="button">submit</button>                    
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                    <button class="contact__btn" type="submit">submit</button>                    
                 </form>
             </div>
 
@@ -177,6 +182,24 @@
         <h3 class="footer__description">Made and designed by Tore Eskildsen</h3>
     </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "media.eskildsen@gmail.com",
+                Password : "E783F377A39C4FB90282CA3314EB6FD3CE72",
+                To : 'media.eskildsen@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "Name: " + document.getElementById("name").value
+                        + "<br> Email: " + document.getElementById("email").value
+                        + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("Message is succesfully sent")
+            );
+        }
+    </script>
 
 </body>
 </html>
